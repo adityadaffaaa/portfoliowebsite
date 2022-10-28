@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hamburger-custom {
+  @apply w-[24px] h-[4px] my-1 rounded-full block bg-text1;
+}
+
+.hamburger-active > span:nth-child(1) {
+  @apply origin-top-left rotate-45;
+}
+.hamburger-active > span:nth-child(2) {
+  @apply scale-0;
+}
+.hamburger-active > span:nth-child(3) {
+  @apply origin-bottom-left -rotate-45;
+}
+
+.shadow-custom {
+  @apply transition-all ease-in-out duration-200 hover:shadow-[0px_4px_24px_#EE6A5E];
+}
