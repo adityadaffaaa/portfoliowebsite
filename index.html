@@ -12,15 +12,17 @@
   </head>
   <body class="font-poppins overflow-x-hidden bg-secondary">
     <header class="fixed w-full top-0 z-10">
-      <nav class="mx-auto px-[75px] relative transition-all ease-in-out duration-200 bg-primary flex shadow-[0_4px_40px_rgba(238,106,94,0.5)] h-[60px] w-full justify-between items-center">
+      <nav class="mx-auto md:px-[75px] px-[24px] relative transition-all ease-in-out duration-200 bg-primary flex shadow-[0_4px_40px_rgba(238,106,94,0.5)] h-[60px] w-full justify-between items-center">
         <img class="h-5 animate-bounce" src="./assets/img/logo.png" alt="" />
-        <button id="hamburger" name="hamburger" type="button" class="block absolute right-12 md:hidden">
+        <button id="hamburger" name="hamburger" type="button" class="block absolute right-8 md:hidden">
           <span class="hamburger-custom transition-all ease-in-out duration-200"></span>
           <span class="hamburger-custom transition-all ease-in-out duration-200"></span>
           <span class="hamburger-custom transition-all ease-in-out duration-200"></span>
         </button>
         <div id="listnav" class="md:block hidden">
-          <ul class="md:flex md:flex-row md:relative md:top-0 md:right-0 md:bg-transparent md:py-0 md:px-0 rounded-b-[16px] flex-col items-center flex gap-6 py-6 px-24 bg-primary absolute top-[60px] right-0 text-[#fbfbfba7] md:gap-6">
+          <ul
+            class="md:flex md:flex-row md:relative md:top-0 md:right-0 md:bg-transparent md:py-0 md:px-0 rounded-b-[16px] flex-col items-center flex gap-6 w-full md:h-auto py-6 bg-primary absolute top-[58px] right-0 text-[#fbfbfba7] md:gap-6"
+          >
             <li class="nav-item hover:text-text1 transition-all ease-in-out duration-200"><a href="#">About</a></li>
             <li class="nav-item hover:text-text1 transition-all ease-in-out duration-200"><a href="#interest">Interest</a></li>
             <li class="nav-item hover:text-text1 transition-all ease-in-out duration-200"><a href="#services">Services</a></li>
@@ -171,8 +173,8 @@
         >
           <div class="wrapper">
             <div class="lg:w-[340px] w-[160px] lg:h-[400px] h-[193px] -z-10 relative lg:top-[500px] lg:left-0 top-[15%] left-[28%] lg:rounded-[32px] rounded-[16px] bg-background2"></div>
-            <img class="lg:h-[490px] h-[230px] z-10 relative lg:rounded-[32px] lg:left-7 left-[30%] lg:top-[-14px] top-[-24%] rounded-[16px]" src="./assets/img/about2.png" alt="" />
-            <img class="lg:h-[390px] h-[187px] z-20 relative lg:left-28 left-[40%] lg:top-[-480px] top-[-59%] md:rounded-[32px] rounded-[16px] shadow-lg" src="./assets/img/about1.png" alt="" />
+            <img class="lg:h-[490px] h-[230px] z-10 relative lg:rounded-[32px] lg:left-7 left-[30%] lg:top-[-14px] top-[-24%] rounded-[16px]" src="../assets/img/about2.png" alt="" />
+            <img class="lg:h-[390px] h-[187px] z-20 relative lg:left-28 left-[40%] lg:top-[-480px] top-[-59%] md:rounded-[32px] rounded-[16px] shadow-lg" src="../assets/img/about1.png" alt="" />
           </div>
           <div class="flex mt-[-290px] items-center lg:items-start lg:mt-0 flex-col gap-3">
             <h2 class="lg:text-heading2 text-heading2res text-text1">About Me</h2>
@@ -440,7 +442,7 @@
       </div>
     </footer>
     <script src="./dist/main.js"></script>
-    <script src="./node_modules/aos/dist/aos.js"></script>
+    <script src="/node_modules/aos/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
